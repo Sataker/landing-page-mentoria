@@ -490,6 +490,128 @@
             font-size: 0.9rem;
         }
 
+        /* TIMELINE SECTION */
+        .timeline {
+            padding: 120px 0;
+            background: var(--navy);
+        }
+
+        .timeline h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .timeline-grid {
+            display: grid;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--cyan);
+            text-align: right;
+        }
+
+        .timeline-content {
+            background: var(--dark-gray);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 3px solid var(--cyan);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .timeline-content p {
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* LEARNINGS SECTION */
+        .learnings {
+            padding: 120px 0;
+            background: var(--black);
+        }
+
+        .learnings h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .learnings > .container > p {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.2rem;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .learnings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .learning-card {
+            background: linear-gradient(135deg, var(--navy), var(--dark-gray));
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .learning-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .learning-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 212, 255, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .learning-icon i {
+            width: 40px;
+            height: 40px;
+            color: var(--cyan);
+        }
+
+        .learning-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .learning-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
         /* ABOUT SECTION */
         .about {
             padding: 120px 0;
@@ -751,6 +873,19 @@
             .nav-links {
                 display: none;
             }
+
+            .learnings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .timeline-year {
+                text-align: left;
+            }
         }
 
         @media (max-width: 640px) {
@@ -1003,13 +1138,83 @@
                         <li><i data-lucide="check"></i> 2 encontros semanais ao vivo</li>
                         <li><i data-lucide="check"></i> Contato direto via WhatsApp</li>
                         <li><i data-lucide="check"></i> Suporte para dúvidas ilimitadas</li>
-                        <li><i data-lucide="check"></i> Acesso a todos os templates</li>
                         <li><i data-lucide="check"></i> Projetos práticos guiados</li>
-                        <li><i data-lucide="check"></i> Comunidade exclusiva</li>
                         <li><i data-lucide="check"></i> Certificado de conclusão</li>
                     </ul>
                     
                     <a href="https://wa.me/5517997683220?text=Olá! Quero saber mais sobre a mentoria completa." class="cta-button">Quero a Mentoria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Minha Trajetória</span>
+                <h2>Do Brasil ao Vale do Silício</h2>
+            </div>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Primeiros Passos com IA</h3>
+                        <p>Comecei a explorar o mundo da Inteligência Artificial e automação. Desenvolvi meus primeiros scripts e automações, e percebi o potencial transformador dessa tecnologia para negócios de todos os tamanhos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Projetos Reais</h3>
+                        <p>Comecei a desenvolver soluções para clientes reais. Criei sistemas de agentes de IA para nutricionistas, personal trainers, e-commerces e diversos outros nichos. Cada projeto me ensinou algo novo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Vale do Silício</h3>
+                        <p>Passei 2 meses imerso no ecossistema de San Francisco. Conheci startups, participei de eventos de IA, e aprendi diretamente com quem está na vanguarda da tecnologia. Voltei com uma visão muito mais ampla do mercado internacional.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>Mentoria e Escala</h3>
+                        <p>Hoje, além de desenvolver sistemas de IA, compartilho meu conhecimento através de mentorias. Meu objetivo é capacitar outros profissionais a dominarem a automação e transformarem seus negócios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNINGS -->
+    <section class="learnings">
+        <div class="container">
+            <h2>O que aprendi no Vale do Silício</h2>
+            <p>Dois meses de imersão total no maior hub de tecnologia do mundo.</p>
+            
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>IA de Ponta</h3>
+                    <p>Acesso às últimas tecnologias e frameworks de IA antes de chegarem ao Brasil. Técnicas avançadas de criação e orquestração de agentes.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Visão Global</h3>
+                    <p>Entendi como empresas internacionais pensam automação em escala. Foco em impacto e eficiência.</p>
+                </div>
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <h3>Cultura de Inovação</h3>
+                    <p>Convivi com founders, desenvolvedores e investidores. A cultura de experimentação constante que define o Vale.</p>
                 </div>
             </div>
         </div>
