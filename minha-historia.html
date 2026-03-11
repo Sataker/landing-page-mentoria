@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         * {
             margin: 0;
@@ -168,6 +169,16 @@
             margin-top: 16px;
             color: var(--gray);
             font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .image-caption i {
+            width: 18px;
+            height: 18px;
+            color: var(--cyan);
         }
 
         .image-caption span {
@@ -270,8 +281,20 @@
         }
 
         .learning-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 212, 255, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .learning-icon i {
+            width: 40px;
+            height: 40px;
+            color: var(--cyan);
         }
 
         .learning-card h3 {
@@ -375,15 +398,15 @@
             .timeline-year {
                 text-align: left;
             }
+
+            .nav-links {
+                display: none;
+            }
         }
 
         @media (max-width: 640px) {
             .hero-text h1 {
                 font-size: 2rem;
-            }
-
-            .nav-links {
-                display: none;
             }
         }
     </style>
@@ -414,7 +437,7 @@
                 </div>
                 <div class="hero-image">
                     <img src="enzo-sf.jpg" alt="Enzo Vaccaro na Golden Gate Bridge, San Francisco">
-                    <p class="image-caption">📍 <span>San Francisco, CA</span> — Golden Gate Bridge</p>
+                    <p class="image-caption"><i data-lucide="map-pin"></i> <span>San Francisco, CA</span> — Golden Gate Bridge</p>
                 </div>
             </div>
         </div>
@@ -465,17 +488,23 @@
             
             <div class="learnings-grid">
                 <div class="learning-card">
-                    <div class="learning-icon">🤖</div>
+                    <div class="learning-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
                     <h3>IA de Ponta</h3>
                     <p>Acesso às últimas tecnologias e frameworks de IA antes de chegarem ao Brasil. Aprendi técnicas avançadas de criação e orquestração de agentes.</p>
                 </div>
                 <div class="learning-card">
-                    <div class="learning-icon">🌐</div>
+                    <div class="learning-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
                     <h3>Visão Global</h3>
                     <p>Entendi como empresas internacionais pensam automação em escala. A mentalidade é completamente diferente — foco em impacto e eficiência.</p>
                 </div>
                 <div class="learning-card">
-                    <div class="learning-icon">🚀</div>
+                    <div class="learning-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
                     <h3>Cultura de Inovação</h3>
                     <p>Convivi com founders, desenvolvedores e investidores. Absorvi a cultura de "move fast" e experimentação constante que define o Vale.</p>
                 </div>
@@ -499,5 +528,10 @@
             <p style="margin-top: 10px;"><a href="https://instagram.com/enzovaccaro.ai">@enzovaccaro.ai</a></p>
         </div>
     </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
